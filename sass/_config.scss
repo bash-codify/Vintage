@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+    outline: none;
+
+}
+html{
+    font-size: 62.5%;
+
+}
+
+
+
+// Variable
+:root{
+
+    --primaryColor: #088178;
+    --primary-variant: #fff;
+    --secondaryColor: #1a1a1a;
+    --backgroundColor: #e3e6f3;
+    --textColor: #e3e6f3;
+    --itemColor: #0881797a;
+    --flashColor: #df0000;
+    --imageBackColor: #e0e0e0;
+    --fs-200:1.15rem;
+    --fs-300:1.25rem;
+    --fs-400:1.6rem;
+    --fs-500:1.8rem;
+    --fs-600:2.1rem;
+    --fs-700:2.4rem;
+    --fs-800:2.8rem;
+    --fs-900:3rem;
+    --fs-1000:5rem;
+    --fs-1100:6.4rem;
+
+}
+
+
+

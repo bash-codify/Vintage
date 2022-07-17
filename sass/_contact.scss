@@ -1,0 +1,280 @@
+.contact-container{
+    min-height:45vh;
+    margin-top:2rem;
+    .contact-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        .contact-content{
+            display:grid;
+            // place-content: center;
+
+            h2{
+                 font-size: var(--fs-500);
+                 padding:0.7rem 0;
+            }
+            .location{
+                .loca-header{
+                     
+
+                    & h3{
+                        font-size: var(--fs-400);
+                        font-weight: 600;
+                        padding: 0.7rem 0;
+                       
+                        
+                    }
+                    
+                }
+                    .loca-address {
+                
+                        p {
+                            font-size: var(--fs-400);
+                            padding:0.7rem 0;
+                         
+                
+                        span {
+                            padding-right: 2rem;
+                                 
+                            }
+                        }
+                    }
+            }
+
+            .contact-message{
+                margin-top:2rem;
+                .mess-header{
+                    
+                    & h3 {
+                            font-size: var(--fs-300);
+                            font-weight: 300;
+                            color: grey;
+                            padding: 0.7rem 0;
+                        }
+                    }
+                    .message-form{
+
+                       
+                        .form-wrapper{
+                            display: grid;
+                            row-gap:0.5rem;
+
+                            & input{
+                                height:3rem;
+                                width: 100%;
+                                border-radius:0.5rem;
+                                border:0.1rem solid var(--secondaryColor);
+                                padding:1rem;
+                                color:var(--primaryColor);
+                            }
+                            & textarea{
+                                border: 0.1rem solid var(--secondaryColor);
+                                    padding: 1rem;
+                                    color: var(--primaryColor);
+                            }
+                        }
+                    }
+            }
+        }
+    }
+    }
+
+
+        @media screen and (min-width:768px){
+
+            .contact-container {
+                    min-height: 45vh;
+                    margin-top: 2rem;
+            
+                    .contact-wrapper {
+                        width: 90%;
+                        margin: 0 auto;
+            
+                        .contact-content {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            place-content: center;
+                            column-gap: 1rem;
+            
+                            h2 {
+                                font-size: var(--fs-500);
+                                padding: 1.5rem 0;
+                            }
+            
+                            .location {
+                                 display: flex;
+                                 flex-direction: column;
+                                 align-items: center;
+                                 justify-content:center;
+                                 padding-bottom:5rem;
+                               
+                                
+                                .loca-header {
+                                    padding-right:3.5rem;
+            
+                                    & h3 {
+                                        font-size: var(--fs-400);
+                                        font-weight: 600;
+                                        padding: 1.5rem 0;
+            
+            
+                                    }
+            
+                                }
+            
+                                .loca-address {
+            
+                                    p {
+                                        font-size: var(--fs-400);
+                                        padding: 1.5rem 0;
+            
+            
+                                        span {
+                                            padding-right: 2rem;
+            
+                                        }
+                                    }
+                                }
+                            }
+            
+                            .contact-message {
+                               
+            
+                                .mess-header {
+                                    
+                                    & h3 {
+                                        font-size: var(--fs-300);
+                                        font-weight: 300;
+                                        color: grey;
+                                        padding: 1.5rem 0;
+                                        
+                                    }
+                                }
+            
+                                .message-form {
+            
+            
+                                    .form-wrapper {
+                                        display: grid;
+                                        row-gap: 0.5rem;
+            
+                                        & input {
+                                            height: 3rem;
+                                            width: 100%;
+                                            border-radius: 0.5rem;
+                                            border: 0.1rem solid var(--secondaryColor);
+                                            padding: 1rem;
+                                            color: var(--primaryColor);
+                                        }
+            
+                                        & textarea {
+                                            border: 0.1rem solid var(--secondaryColor);
+                                            padding: 1rem;
+                                            color: var(--primaryColor);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+
+
+        @media screen and (min-width:1024px){
+            .contact-container {
+                    min-height: 45vh;
+                    margin-top: 2rem;
+            
+                    .contact-wrapper {
+                        width: 85%;
+                        margin: 0 auto;
+            
+                        .contact-content {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            place-content: center;
+                            column-gap: 0.5rem;
+            
+                            h2 {
+                                font-size: var(--fs-500);
+                                padding: 0.7rem 0;
+                            }
+            
+                            .location {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                padding-bottom: 5rem;
+            
+            
+                                .loca-header {
+                                   
+            
+                                    & h3 {
+                                        font-size: var(--fs-400);
+                                        font-weight: 600;
+                                        padding: 1.5rem 0;
+            
+            
+                                    }
+            
+                                }
+            
+                                .loca-address {
+            
+                                    p {
+                                        font-size: var(--fs-400);
+                                        padding: 1.5rem 0;
+            
+            
+                                        span {
+                                    
+                                            padding-right:2rem;
+            
+                                        }
+                                    }
+                                }
+                            }
+            
+                            .contact-message {
+            
+            
+                                .mess-header {
+                                    
+                                    & h3 {
+                                        font-size: var(--fs-300);
+                                        font-weight: 300;
+                                        color: grey;
+                                        padding: 1.5rem 0;
+                                    }
+                                }
+            
+                                .message-form {
+            
+            
+                                    .form-wrapper {
+                                        display: grid;
+                                        row-gap: 0.5rem;
+            
+                                        & input {
+                                            height: 3rem;
+                                            width: 100%;
+                                            border-radius: 0.5rem;
+                                            border: 0.1rem solid var(--secondaryColor);
+                                            padding: 1rem;
+                                            color: var(--primaryColor);
+                                        }
+            
+                                        & textarea {
+                                            border: 0.1rem solid var(--secondaryColor);
+                                            padding: 1rem;
+                                            color: var(--primaryColor);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }

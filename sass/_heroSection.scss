@@ -1,0 +1,545 @@
+
+
+.box{
+    width: 100%;
+    height:90vh;
+    background-size: cover !important;
+
+}
+.position1{
+    background-position: top 50% left 28% !important;
+  
+}
+.position2{
+background-position: top 50% right 25% !important;
+}
+.position3{
+    background-position: top 50% right 74% !important;
+
+}
+.position4{
+background-position: top 50% left 70% !important;
+}
+
+.swiper {
+
+    .swiper-pagination-buller{
+    background:transparent;
+    width: 2rem;
+    height: 2rem;
+    border: 0.2rem solid var(--primaryColor);
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.swiper .swiper-pagination-buller-active {
+    background: var(--primaryColor !important);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+        color: var(--primaryColor);
+        font-size: 2rem;
+        display: none;
+
+    
+}
+
+
+.content-1st{
+    
+    flex-direction: column;
+    float:right;
+    height: 68vh;
+    margin-right: 2rem;
+
+
+    & > h2{
+        font-size: var(--fs-800);
+    }
+
+    & > h3{
+        font-size: var(--fs-500);
+    }
+    & > p {
+      
+      color: var(--primaryColor);
+      font-weight: 600;
+    font-size: var(--fs-400);
+    }
+   
+    & .btn-container{
+        padding-top:1.6rem;
+        margin-left: 5rem;
+
+
+         & .btn a{
+        color: var(--textColor);
+    }
+
+    }
+
+
+}
+.content-3rd{
+    
+    flex-direction: column;
+    float:right;
+    height: 68vh;
+    margin-right: 2.4rem;
+
+
+    & > h2{
+        font-size: var(--fs-800);
+      
+    }
+   
+    & .btn-container{
+        padding-top:1.6rem;
+        margin-left: 7rem;
+
+
+         & .btn a{
+        color: var(--textColor);
+    }
+
+    }
+
+
+}
+
+
+    .content-2nd{
+    flex-direction: column;
+    float: left;
+    height: 72vh;
+    margin-left: 2rem;
+    
+
+
+    & >h2 {
+        font-size: var(--fs-800);
+       
+        }
+    
+        & >h4 {
+            font-size: 1.2rem;
+        }
+    
+        & >p {
+    
+            color: var(--primaryColor);
+            font-weight: 600;
+              font-size: var(--fs-400);
+        }
+
+          & span{
+                color: var(--primaryColor);
+            }
+          & .save{
+                color: red;
+                
+            }
+    
+        & .btn-container {
+            margin-top: 1.6rem;
+             margin-left:5rem;
+    
+    
+            & .btn a {
+                color: var(--textColor);
+            }
+
+          
+    
+        }
+
+
+    
+}
+
+// Shop Banner Section
+
+
+.banner-container{
+    width: 100%;
+    min-height: 35vh;
+
+    .banner-wrapper{
+        min-height: 35vh;
+        background: url('../assets/img/banner/shop\ banner.jpg') center/cover no-repeat;
+        margin-bottom:1rem;
+        
+    }
+}
+
+// End Of Shop Banner Section
+
+
+@media screen and (min-width:768px){
+
+
+    h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p {
+    
+            color: var(--secondaryColor);
+            width: 110%;
+    
+      
+    
+        }
+
+// Banner Section
+
+
+    .box {
+        width: 100%;
+        height: 90vh;
+        background-size: cover !important;
+
+    }
+
+    .position1 {
+        background-position: top 40% left 22% !important;
+
+    }
+
+    .position2 {
+        background-position: top 40% right 28% !important;
+
+    }
+
+    .position3 {
+        background-position: top 40% left 20% !important;
+    }
+
+    .box .position4 {
+        background-position: top 40% right 25% !important;
+    }
+
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        color: var(--primaryColor);
+        font-size: 2rem;
+        display: block;
+
+
+    }
+
+
+    .box .content-1st {
+
+        flex-direction: column;
+        float: right;
+        height: 80vh;
+        margin-right: 8rem;
+
+
+        &>h2 {
+            font-size: var(--fs-1000);
+        }
+
+        &>h3 {
+            font-size: 2.5rem;
+        }
+
+        &>p {
+
+            color: var(--primaryColor);
+            font-weight: 600;
+            font-size: var(--fs-500);
+        }
+
+        & .btn-container {
+            padding-top: 1.6rem;
+            margin-left: 9rem;
+
+
+            & .btn a {
+                color: var(--textColor);
+                padding: 0.8rem 1.4rem;
+                font-size: 1.4rem;
+            }
+
+        }
+
+
+    }
+
+    .box .content-3rd {
+
+        flex-direction: column;
+        float: right;
+        height: 80vh;
+        margin-right: 8rem;
+
+
+        &>h2 {
+            font-size: var(--fs-1000);
+        }
+
+        & .btn-container {
+            padding-top: 1.6rem;
+            margin-left: 13.5rem;
+
+
+            & .btn a {
+                color: var(--textColor);
+                padding: 0.8rem 1.4rem;
+                font-size: 1.4rem;
+            }
+
+        }
+
+
+    }
+
+
+    .box .content-2nd {
+        flex-direction: column;
+        float: left;
+        height: 80vh;
+        margin-left: 8rem;
+
+
+
+        & >h2 {
+            font-size: var(--fs-1000);
+            width: 110%;
+        
+            
+        }
+
+        &>h4 {
+            font-size: 2.4rem;
+        }
+
+        &>p {
+
+            color: var(--primaryColor);
+            font-weight: 600;
+           font-size: var(--fs-500);
+        }
+
+        & span {
+            color: var(--primaryColor);
+        }
+
+        & .save {
+            color: red;
+            font-size: 1.6rem;
+        }
+
+        & .btn-container {
+            margin-top: 1.6rem;
+            margin-left: 11rem;
+
+
+            & .btn a {
+                color: var(--textColor);
+                padding: 0.8rem 1.4rem;
+                font-size: 1.4rem;
+            }
+
+
+
+        }
+
+
+    }
+
+
+    // End of banner Section
+
+
+}
+
+
+
+// Desktop Media Query Section
+
+
+
+@media screen and (min-width:1024px) {
+
+h1,h2,h3,h4,h5, p{
+
+
+    color: var(--secondaryColor);
+     width:120%;
+
+    // line-height: 1.2rem;
+
+}
+    // Banner Section
+
+
+    .box {
+        width: 100%;
+        height: 90vh;
+        background-size: cover !important;
+
+    }
+
+    .position1 {
+        background-position: top 40% left 22% !important;
+
+    }
+
+    .position2 {
+        background-position: top 40% right 28% !important;
+
+    }
+
+    .position3 {
+        background-position: top 40% left 20% !important;
+    }
+
+    .position4 {
+        background-position: top 40% right 22% !important;
+    }
+
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        color: var(--primaryColor);
+        font-size: 2rem;
+        display: block;
+
+
+    }
+
+
+    .box .content-1st {
+
+        flex-direction: column;
+        float: right;
+        height: 85vh;
+        margin-right: 20rem;
+
+
+        &>h2 {
+            font-size: var(--fs-1100);
+        }
+
+        &>h3 {
+           font-size: var(--fs-1000);
+        }
+
+        &>p {
+
+            color: var(--primaryColor);
+            font-weight: 600;
+            font-size: var(--fs-500);
+        }
+
+        & .btn-container {
+            padding-top: 1.6rem;
+            margin-left: 22.5rem;
+
+
+            & .btn a {
+                color: var(--textColor);
+                padding: 0.8rem 1.4rem;
+            font-size: var(--fs-400);
+            }
+
+        }
+
+
+    }
+
+    .box .content-3rd {
+
+        flex-direction: column;
+        float: right;
+        height: 85vh;
+        margin-right: 20rem;
+
+
+        &>h2 {
+        font-size: var(--fs-1100);
+        }
+
+        & .btn-container {
+            padding-top: 1.6rem;
+            margin-left: 22.5rem;
+
+
+            & .btn a {
+                color: var(--textColor);
+                padding: 1rem 1.8rem;
+            font-size: var(--fs-400);
+            }
+
+        }
+
+
+    }
+
+
+    .box .content-2nd {
+        flex-direction: column;
+        float: left;
+        height: 85vh;
+        margin-left: 20rem;
+
+
+
+        &>h2 {
+            font-size: var(--fs-1100);
+            width: 120%;
+        }
+
+        &>h4 {
+            font-size: var(--fs-900);
+        }
+
+        &>p {
+
+            color: var(--primaryColor);
+            font-weight: 600;
+            font-size: var(--fs-500);
+        }
+
+        & span {
+            color: var(--primaryColor);
+        }
+
+        & .save {
+            color: red;
+           
+        }
+
+        & .btn-container {
+            margin-top: 1.6rem;
+            margin-left: 20rem;
+
+
+            & .btn a {
+                color: var(--textColor);
+                padding: 1rem 1.8rem;
+                font-size: var(--fs-400);
+            }
+
+
+
+        }
+
+
+    }
+
+
+
+
+}

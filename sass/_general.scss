@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--backgroundColor);
+    user-select: none;
+    z-index:10;
+    overflow-x:hidden;
+    
+    
+
+    
+}
+
+#body{
+    &.fixed-body{
+        overflow: hidden;
+        block-size: 100%;
+        background: #9696968c;
+        opacity: 0.9;
+        z-index:-10;
+  
+    }
+        
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.product-container{
+    width: 100%;
+    min-height: 80vh;
+    overflow-x: hidden;
+ 
+}
+.flash-container2{
+    width: 100%;
+    min-height: 80vh;
+  
+}
+.hero-section{
+    width: 100%;
+    min-height: 90vh;
+}
+.flash-container{
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top:20rem;
+    
+}
+.flyer-container{
+    width: 100%;
+    min-height: 42.5vh;
+     margin-top: 5rem;
+    
+}
+
+.advert-container{
+    width: 100%;
+    min-height: 100vh;
+     margin-top: 7rem;
+    
+}
+
+.flyer2-container {
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 5rem;
+
+}
+.footer-container {
+    width: 100%;
+    min-height: 80vh;
+    background: var(--primary-variant);
+
+}
+
+.container-mob{
+    max-width: 85%;
+    margin: 0 auto;
+  
+
+}
+.container-md{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.flex-center{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+}
+.flex{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.grid-center{
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.grid{
+
+    display: grid;
+    place-items: center;
+ 
+}
+.grid{
+
+    grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+h1,h2,h3,h4,h5, p{
+
+
+    color: var(--secondaryColor);
+     width:100%;
+
+    // line-height: 1.2rem;
+
+}
+// section{
+//     margin-top: auto;
+
+//     & > h2{
+//         text-align: center;
+//     }
+//     & > p{
+//         text-align: center;
+//         width: 45%;
+//         margin: 0.6rem auto 2.5rem;
+//     }
+// }
+
+.btn{
+display: inline-block;
+    width: fit-content;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--primaryColor);
+    color: var(--textColor);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border:none;
+}
+
+.btn2{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.7rem 1.5rem;
+    background: var(--primaryColor);
+    color: var(--textColor);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border:none;
+}
+
+
