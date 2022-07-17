@@ -1012,7 +1012,7 @@ p {
 .flash-wrapper .deadline-format > div > h2 {
   color: red;
 }
-.flash-wrapper .flashimage {
+.flash-wrapper .flashimage img {
   position: absolute;
   left: -10rem;
   transform: translateY(-86.1%);
