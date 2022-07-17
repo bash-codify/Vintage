@@ -278,7 +278,7 @@ html {
 
 .nav-link {
   position: fixed;
-  top: 6.8rem;
+  top: 10vh;
   left: -30rem;
   width: 30rem;
   height: 90vh;
@@ -1014,8 +1014,8 @@ p {
 }
 .flash-wrapper .flashimage {
   position: absolute;
-  top: -13.8rem;
-  left: -10rem;
+  top: -19.8vh;
+  left: -20vw;
   z-index: -10;
 }
 
@@ -1142,7 +1142,7 @@ p {
 }
 .product-wrapper .feature-content-container .feature-image-wrapper .wishlist {
   position: absolute;
-  transform: translate(17.5rem, -25rem);
+  transform: translate(17rem, -25rem);
   font-size: var(--fs-400);
 }
 .product-wrapper .feature-content-container .feature-image-wrapper .wishlist.active5 {
@@ -1239,7 +1239,7 @@ p {
   }
   .product-wrapper .feature-content-container .feature-image-wrapper .wishlist {
     position: absolute;
-    transform: translate(31.5rem, -35rem);
+    transform: translate(31rem, -35rem);
     font-size: var(--fs-400);
   }
   .product-wrapper .feature-content-container .feature-image-wrapper .wishlist.active5 {
@@ -1312,7 +1312,7 @@ p {
   }
   .product-wrapper .feature-content-container .feature-image-wrapper .wishlist {
     position: absolute;
-    transform: translate(28rem, -35rem);
+    transform: translate(27rem, -35rem);
     font-size: var(--fs-400);
   }
   .product-wrapper .feature-content-container .feature-image-wrapper .wishlist.active5 {
