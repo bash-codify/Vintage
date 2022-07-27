@@ -15,19 +15,20 @@
     
         & .col{
             & h2{
-                font-size: var(--fs-600);
-                padding-bottom: 0.7rem;
+                font-size: var(--fs-500);
+                transform: translateY(-0.7rem);
+
             }
 
             & h3 {
 
-                font-size: var(--fs-400);
+                font-size: var(--fs-300);
                  padding-bottom: 0.7rem;
                 //  text-align:center;
             }
 
             & p{
-                font-size: var(--fs-300);
+                font-size: var(--fs-200);
                 font-weight: 400;
                 padding-bottom: 0.7rem;
             }
@@ -38,7 +39,7 @@
 
             & .social-media{
                 & a{
-                    font-size: var(--fs-500);
+                    font-size: var(--fs-400);
                     padding-right:1rem;
                 }
             }
@@ -59,7 +60,7 @@
     }
 
          .reserved {
-             font-size: var(--fs-300);
+             font-size: var(--fs-200);
              text-align: center;
              margin-top:1rem;
 

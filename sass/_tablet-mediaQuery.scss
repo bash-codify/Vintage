@@ -139,13 +139,290 @@
 
         // End of NavBar section
 
+}
+@media screen and (min-width:820px){
+   
+
+    // NavBar Section
+    
+        .cart-profile-search {
+            display: none;
+    
+    
+        }
+    
+        .hamburger-btn {
+            display: none
+        }
 
 
-
-
-
+        .nav-link{
+            position:initial;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            height: auto;
+            padding-bottom: 5rem;
+            width: fit-content;
+            background-color: transparent;
+            box-shadow:none;
+            transition: none;
+            
+           
+    
 
     
+            //       
+            & li {
+               
+                font-size: 2rem;
+                font-weight: 500;
+                display:inline-block;
+                 margin-left: 2rem;
+                .search {
+                
+                        .search-icon {
+                            &:hover {
+                                color: var(--primaryColor)
+                            }
+                        }
+                
+                        .search-input {
+                            position: absolute;
+                            transform: translate(-19.8rem, 4.7rem);
+                            transition: all 0.6s ease-in-out;
+                            display: none;
+                
+                            &:hover {
+                                color: var(--primaryColor)
+                            }
+                
+                            &.active1 {
+                                display: inline-block;
+                            }
+                
+                            #search {
+                                width: 25rem;
+                                height: 3rem;
+                                border-radius: 0.7rem;
+                                border: 0.1rem solid var(--secondaryColor);
+                                padding: 0.9rem;
+                                color: var(--primaryColor);
+                                transition: transform 0.6s ease-in-out;
+                                position: relative;
+                            }
+                
+                            .search-btn {
+                                position: absolute;
+                                transform: translate(-3rem, 0.7rem);
+                                background: transparent;
+                                border: none;
+                                color: var(--primaryColor);
+                            }
+                
+                        }
+                
+                    }
+                
+                    .profile {
+                        
+                        &:hover {
+                            color: var(--primaryColor)
+                        }
+                    }
+
+
+                     & .profile-lg {
+        
+                display: block;
+            }
+        & .search-lg {
+            
+            display: block;
+        }
+               
+                
+                
+            }
+    
+            & li a {
+                color: var(--secondaryColor);
+    
+                &.active::before {
+                    content: '';
+    
+                    position: absolute;
+                    left: 0;
+                    bottom: -1rem;
+                    width: 40%;
+                    height: 0.2rem;
+                    background: var(--primaryColor);
+                    transition: all 0.8s ease-in-out;
+                }
+    
+    
+                &.active {
+                    color: var(--primaryColor);
+                }
+    
+                &:hover {
+    
+                    color: var(--primaryColor);
+                }
+    
+                &.cart-lg {
+    
+                    display: block;
+                }
+            }
+    
+    
+        }
+
+        // End of NavBar section
+
+}
+@media screen and (min-width:912px){
+   
+
+    // NavBar Section
+    
+        .cart-profile-search {
+            display: none;
+    
+    
+        }
+    
+        .hamburger-btn {
+            display: none
+        }
+
+
+        .nav-link{
+            position:initial;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            height: auto;
+            padding-bottom: 5rem;
+            width: fit-content;
+            background-color: transparent;
+            box-shadow:none;
+            transition: none;
+            
+           
+    
+
+    
+            //       
+            & li {
+               
+                font-size: 2rem;
+                font-weight: 500;
+                display:inline-block;
+                 margin-left: 2rem;
+                .search {
+                
+                        .search-icon {
+                            &:hover {
+                                color: var(--primaryColor)
+                            }
+                        }
+                
+                        .search-input {
+                            position: absolute;
+                            transform: translate(-19.8rem, 4.7rem);
+                            transition: all 0.6s ease-in-out;
+                            display: none;
+                
+                            &:hover {
+                                color: var(--primaryColor)
+                            }
+                
+                            &.active1 {
+                                display: inline-block;
+                            }
+                
+                            #search {
+                                width: 25rem;
+                                height: 3rem;
+                                border-radius: 0.7rem;
+                                border: 0.1rem solid var(--secondaryColor);
+                                padding: 0.9rem;
+                                color: var(--primaryColor);
+                                transition: transform 0.6s ease-in-out;
+                                position: relative;
+                            }
+                
+                            .search-btn {
+                                position: absolute;
+                                transform: translate(-3rem, 0.7rem);
+                                background: transparent;
+                                border: none;
+                                color: var(--primaryColor);
+                            }
+                
+                        }
+                
+                    }
+                
+                    .profile {
+                        
+                        &:hover {
+                            color: var(--primaryColor)
+                        }
+                    }
+
+
+                     & .profile-lg {
+        
+                display: block;
+            }
+        & .search-lg {
+            
+            display: block;
+        }
+               
+                
+                
+            }
+    
+            & li a {
+                color: var(--secondaryColor);
+    
+                &.active::before {
+                    content: '';
+    
+                    position: absolute;
+                    left: 0;
+                    bottom: -1rem;
+                    width: 40%;
+                    height: 0.2rem;
+                    background: var(--primaryColor);
+                    transition: all 0.8s ease-in-out;
+                }
+    
+    
+                &.active {
+                    color: var(--primaryColor);
+                }
+    
+                &:hover {
+    
+                    color: var(--primaryColor);
+                }
+    
+                &.cart-lg {
+    
+                    display: block;
+                }
+            }
+    
+    
+        }
+
+        // End of NavBar section
+
 }
 
 
