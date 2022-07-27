@@ -1144,39 +1144,48 @@ p {
 .flash-wrapper {
   width: 100%;
   height: 40vh;
+}
+.flash-wrapper .flashwrap {
+  height: 40vh;
   background: var(--primary-variant);
   border-radius: 0.8rem;
-  padding-left: 2rem;
-  position: relative;
-  z-index: -100;
 }
-.flash-wrapper .content {
+.flash-wrapper .flashwrap img {
+  width: 100%;
+  height: 30rem;
+  transform: translate(5rem, -7.64rem);
+}
+.flash-wrapper .flashwrap .content {
+  padding-left: 2rem;
+  transform: translateY(-30rem);
   padding-top: 2.5rem;
 }
-.flash-wrapper .content > h2 {
+.flash-wrapper .flashwrap .content > h2 {
   color: var(--flashColor);
   font-size: var(--fs-700);
   z-index: 10;
 }
-.flash-wrapper .content > p {
+.flash-wrapper .flashwrap .content > p {
   font-size: var(--fs-300);
   font-weight: 700;
 }
-.flash-wrapper .content > p span {
+.flash-wrapper .flashwrap .content > p span {
   color: var(--flashColor);
 }
-.flash-wrapper .content .flash-details {
+.flash-wrapper .flashwrap .content .flash-details {
   font-size: var(--fs-400);
   color: #000;
   font-weight: 700;
   z-index: 1;
 }
-.flash-wrapper .dead-line {
+.flash-wrapper .flashwrap .dead-line {
+  padding-left: 2rem;
+  transform: translateY(-33rem);
   display: flex;
   gap: 1.8rem;
   margin-top: 5rem;
 }
-.flash-wrapper .deadline-format {
+.flash-wrapper .flashwrap .dead-line .deadline-format {
   font-size: var(--fs-300);
   font-weight: 500;
   line-height: 3rem;
@@ -1187,18 +1196,11 @@ p {
   display: grid;
   place-items: center;
 }
-.flash-wrapper .deadline-format > div {
+.flash-wrapper .flashwrap .dead-line .deadline-format > div {
   text-align: center;
 }
-.flash-wrapper .deadline-format > div > h2 {
+.flash-wrapper .flashwrap .dead-line .deadline-format > div > h2 {
   color: red;
-}
-.flash-wrapper .flashimage img {
-  position: absolute;
-  left: -7rem;
-  transform: translateY(-29.18rem);
-  z-index: -10;
-  height: 30rem;
 }
 
 .product-wrapper {
@@ -1353,13 +1355,6 @@ p {
   .flash-wrapper .deadline-format > div > h2 {
     color: red;
   }
-  .flash-wrapper .flashimage img {
-    position: absolute;
-    left: -2rem;
-    transform: translateY(-29.18rem);
-    z-index: -10;
-    height: 30rem;
-  }
 }
 @media screen and (min-width: 425px) {
   .flash-container2 {
@@ -1416,13 +1411,6 @@ p {
   }
   .flash-wrapper .deadline-format > div > h2 {
     color: red;
-  }
-  .flash-wrapper .flashimage img {
-    position: absolute;
-    left: 1.5rem;
-    transform: translateY(-29.18rem);
-    z-index: -10;
-    height: 30rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -3121,6 +3109,9 @@ p {
     width: 100%;
     border-radius: 0.5rem;
   }
+}
+.footer-container {
+  overflow: hidden;
 }
 .footer-container .footer-wrapper {
   max-width: 90%;

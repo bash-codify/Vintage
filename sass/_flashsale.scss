@@ -7,92 +7,94 @@
 .flash-wrapper{
     width: 100%;
     height: 40vh;
-    background: var(--primary-variant);
-    border-radius: 0.8rem;
-    padding-left:2rem;
-    position: relative;
-      z-index: -100;
-
-
-    & .content{
-        padding-top: 2.5rem; 
-      
-
-
-        & > h2{
-            color: var(--flashColor);
-            font-size: var(--fs-700);
-              z-index: 10;
-        }
-
-        & > p{
-            font-size: var(--fs-300);
-          font-weight: 700;
-
-            & span{
-                color: var(--flashColor);
-            }
-        }
-
-         & .flash-details{
-
-            font-size: var(--fs-400);
-            color:#000;
-            font-weight: 700;
-            z-index: 1;
-          
-         }
-        
-       
-    }
-
-
-    & .dead-line{
-
-        display:flex;
-        gap:1.8rem;
-        margin-top:5rem;
-    }
-
-    & .deadline-format{
-        font-size: var(--fs-300);
-        font-weight: 500;
-        line-height:3rem;
-        z-index: 1;
-        // width: 6.5rem;
-        // height: 6rem;
-        padding:0.25rem 1rem;
-        background: var(--backgroundColor);
-        border-radius:1rem;
-        display:grid;
-        place-items: center;
-        
-     
-
-        & > div{
-           text-align: center;
-
-        & > h2 {
-                color: red;
-            }
-        }
-      
-    }
-
-
-    & .flashimage{
-        img{
-
-            position:absolute;
-            left:-7rem;
-            transform: translateY(-29.18rem);
-            z-index: -10;
-            height:30rem ;
-        }
-   
-   
     
-    }
+      .flashwrap{
+        height: 40vh;
+            background: var(--primary-variant);
+            border-radius: 0.8rem;
+        
+
+            img{
+                width: 100%;
+                height: 30rem;
+                transform:translate(5rem, -7.64rem);
+            }
+
+
+
+            & .content{
+                padding-left: 2rem;
+                transform: translateY(-30rem);
+                padding-top: 2.5rem; 
+              
+        
+        
+                & > h2{
+                    color: var(--flashColor);
+                    font-size: var(--fs-700);
+                      z-index: 10;
+                }
+        
+                & > p{
+                    font-size: var(--fs-300);
+                  font-weight: 700;
+        
+                    & span{
+                        color: var(--flashColor);
+                    }
+                }
+        
+                 & .flash-details{
+        
+                    font-size: var(--fs-400);
+                    color:#000;
+                    font-weight: 700;
+                    z-index: 1;
+                  
+                 }
+                
+               
+            }
+            & .dead-line{
+        
+                padding-left: 2rem;
+                transform: translateY(-33rem);
+                display:flex;
+                gap:1.8rem;
+                margin-top:5rem;
+                & .deadline-format{
+                    
+                    
+                    font-size: var(--fs-300);
+                    font-weight: 500;
+                    line-height:3rem;
+                    z-index: 1;
+                    // width: 6.5rem;
+                    // height: 6rem;
+                    padding:0.25rem 1rem;
+                    background: var(--backgroundColor);
+                    border-radius:1rem;
+                    display:grid;
+                    place-items: center;
+                    
+                 
+            
+                    & > div{
+                       text-align: center;
+            
+                    & > h2 {
+                            color: red;
+                        }
+                    }
+                  
+                   
+                }
+
+            }
+        
+      }
+
+
 
 
 }
@@ -322,19 +324,19 @@
         }
 
 
-        & .flashimage {
-            img {
+        // & .flashimage {
+        //     img {
 
-                position: absolute;
-                left: -2rem;
-                transform: translateY(-29.18rem);
-                z-index: -10;
-                height: 30rem;
-            }
+        //         position: absolute;
+        //         left: -2rem;
+        //         transform: translateY(-29.18rem);
+        //         z-index: -10;
+        //         height: 30rem;
+        //     }
 
 
 
-        }
+        // }
 
 
     }
@@ -422,19 +424,19 @@
         }
 
 
-        & .flashimage {
-            img {
+        // & .flashimage {
+        //     img {
 
-                position: absolute;
-                left: 1.5rem;
-                transform: translateY(-29.18rem);
-                z-index: -10;
-                height: 30rem;
-            }
+        //         position: absolute;
+        //         left: 1.5rem;
+        //         transform: translateY(-29.18rem);
+        //         z-index: -10;
+        //         height: 30rem;
+        //     }
 
 
 
-        }
+        // }
 
 
     }
