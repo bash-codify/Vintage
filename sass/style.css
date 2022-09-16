@@ -1381,7 +1381,7 @@ p {
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(48%, -54.3%);
+    transform: translate(48%, -57.4%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1390,7 +1390,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 41.25rem;
+    height: 41.5rem;
   }
 }
 @media screen and (min-width: 500px) {
