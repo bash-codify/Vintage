@@ -1343,7 +1343,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 35rem;
+    height: 135rem;
   }
 }
 @media screen and (min-width: 390px) {
@@ -1599,7 +1599,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 100rem;
+    height: 41.5rem;
   }
 }
 @media screen and (min-width: 428px) {
@@ -1687,7 +1687,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 100rem;
+    height: 40rem;
   }
 }
 @media screen and (min-width: 500px) {
