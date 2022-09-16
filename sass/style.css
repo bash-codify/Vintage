@@ -1131,7 +1131,6 @@ p {
   width: 100%;
   min-height: 70vh;
   margin-top: 30vh;
-  overflow-x: hidden;
 }
 .flash-container .flash-wrapper {
   max-width: 100%;
@@ -1218,7 +1217,6 @@ p {
     width: 100%;
     min-height: 70vh;
     margin-top: 30vh;
-    overflow-x: hidden;
   }
   .flash-container .flash-wrapper {
     max-width: 100%;
@@ -1304,7 +1302,6 @@ p {
     width: 100%;
     min-height: 50vh;
     margin-top: 15vh;
-    overflow-x: hidden;
   }
   .flash-container .flash-wrapper {
     max-width: 95%;
