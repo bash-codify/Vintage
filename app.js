@@ -87,7 +87,7 @@ const saleDetail = document.querySelector('.sales-date');
 // let tempMonth = new Date().getMonth();
 // let tempDay = new Date().getDay();
 // let tempDate = new Date().getDate();
-let setDate = new Date(2022, 7, 30, 0, 0, 0);
+let setDate = new Date(2022, 8, 30, 0, 0, 0);
 
   const year = setDate.getFullYear();
   const month = months[setDate.getMonth()];
@@ -144,7 +144,7 @@ const searchInput = document.querySelector('.search-input');
 
 searchIcon.addEventListener('click', ()=>{
   searchInput.classList.toggle('active1');
-  console.log('hello');
+
 });
 
 
