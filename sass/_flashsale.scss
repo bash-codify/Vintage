@@ -342,7 +342,7 @@
                     .deadline-format{
     
                     width: fit-content;
-                    background: red;
+                    background: var(  --backgroundColor);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -381,7 +381,7 @@
 
                     img{
 
-                        height: 41.5rem;
+                        height: 41.25rem;
                     }
     
                 

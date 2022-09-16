@@ -1362,7 +1362,7 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    background: red;
+    background: var(--backgroundColor);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1390,7 +1390,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 41.5rem;
+    height: 41.25rem;
   }
 }
 @media screen and (min-width: 500px) {
