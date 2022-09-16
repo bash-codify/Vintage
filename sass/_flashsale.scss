@@ -496,27 +496,6 @@
 
                
     
-                .flash-image{
-    
-                    position: absolute;
-                    top: 50%;
-                    right: 50%;
-                    transform: translate(48%, -54.5%);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    place-items: center;
-                    z-index: -1;
-                    box-shadow: 0 0 2rem var(--greyColor);
-    
-                img{
-                    height: 100rem;
-                }
-    
-                
-                
-                }
-            }
     
     
             
@@ -527,136 +506,6 @@
 }
 
 
-
-// @media screen and (min-width:410px){
-
-//     .flash-container{
-
-//         width:100%;
-//         min-height: 50vh;
-     
-       
-    
-//         .flash-wrapper{
-    
-//             max-width: 95%;
-//             margin: auto;
-    
-    
-//             .flash-content{
-    
-//                 width: 100%;
-//                height: 40vh;
-//                 background: var( --primary-variant);
-//                 position: relative;
-//                 border-radius: 0.7rem;
-//                 z-index: 100;
-//                 box-shadow: 0 0.5rem 1rem var(--greyColor);
-    
-    
-    
-//                 .flash-text{
-    
-    
-//                     display: flex;
-//                     align-items: left;
-//                     justify-content: center;
-//                     flex-direction: column;
-//                     gap: 3rem;
-//                     height: 90%;
-//                     padding-left: 5vw;
-//                     letter-spacing: 0.2rem;
-    
-//                     z-index: 100;
-    
-//                     .content{
-    
-//                         h1{
-//                             font-size: var(--fs-800);
-//                             color: var(--flashColor);
-//                             font-weight: 700;
-//                             padding-bottom: 1rem;
-//                         }
-    
-//                         h2{
-//                             font-size: var(--fs-400);
-//                             padding-bottom: 1rem;
-//                         }
-    
-//                         p{
-//                             font-size: var(--fs-300);
-//                             padding-bottom: 1rem;
-//                         }
-    
-//                         span{
-//                             text-decoration: line-through;
-//                             color: var(--flashColor);
-//                             font-weight: 600;
-//                         }
-    
-//                     }
-    
-//                 }
-//                 .dead-line{
-                    
-//                     display: flex;
-//                     align-items: center;
-//                     gap: 2rem;
-                    
-    
-//                     .deadline-format{
-    
-//                     width: fit-content;
-//                     background: red;
-//                     display: flex;
-//                     align-items: center;
-//                     justify-content: center;
-//                     padding: 0.8rem;
-//                     border-radius: 1rem;
-//                     h2{
-//                         text-align: center;
-//                         font-size: var(--fs-500);
-//                     }
-//                     span{
-//                         font-size: var(--fs-300);
-//                         font-weight: 600;
-//                     }
-                        
-//                     }
-//                 }
-    
-    
-    
-    
-    
-//                 .flash-image{
-    
-//                     position: absolute;
-//                     top: 50%;
-//                     right: 50%;
-//                     transform: translate(48%, -55.1%);
-//                     display: flex;
-//                     align-items: center;
-//                     justify-content: center;
-//                     place-items: center;
-//                     z-index: -1;
-//                     box-shadow: 0 0 2rem var(--greyColor);
-    
-                
-
-//                     img{
-
-//                         height: 41.5rem;
-//                     }
-    
-                
-                
-//                 }
-//             }
-    
-//         }
-//     }
-// }
 
 
 @media screen and (min-width:412px){
@@ -907,7 +756,7 @@
 
                     img{
 
-                        height: 41.5rem;
+                        height: 100rem;
                     }
     
                 
@@ -1041,7 +890,7 @@
 
                     img{
 
-                        height: 40rem;
+                        height: 100rem;
                     }
     
                 

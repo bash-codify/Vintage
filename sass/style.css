@@ -1425,9 +1425,6 @@ p {
     z-index: 100;
     box-shadow: 0 0.5rem 1rem var(--greyColor);
   }
-  .flash-container .flash-wrapper .flash-content img {
-    height: 100rem;
-  }
 }
 @media screen and (min-width: 412px) {
   .flash-container {
@@ -1602,7 +1599,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 41.5rem;
+    height: 100rem;
   }
 }
 @media screen and (min-width: 428px) {
@@ -1690,7 +1687,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 40rem;
+    height: 100rem;
   }
 }
 @media screen and (min-width: 500px) {
