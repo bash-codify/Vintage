@@ -1426,7 +1426,7 @@ p {
     box-shadow: 0 0.5rem 1rem var(--greyColor);
   }
 }
-@media screen and (min-width: 4010px) {
+@media screen and (min-width: 410px) {
   .flash-container {
     width: 100%;
     min-height: 50vh;
