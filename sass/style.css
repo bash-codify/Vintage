@@ -1571,7 +1571,7 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    background: red;
+    background: var(--backgroundColor);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1590,7 +1590,7 @@ p {
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(48%, -55.1%);
+    transform: translate(48%, -56%);
     display: flex;
     align-items: center;
     justify-content: center;
