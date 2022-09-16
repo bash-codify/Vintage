@@ -32,13 +32,14 @@ body{
 .product-container{
     width: 100%;
     min-height: 80vh;
-    overflow-x: hidden;
+    overflow: hidden;
  
 }
 
 .hero-section{
     width: 100%;
     min-height: 90vh;
+    overflow: hidden;
 }
 .flyer-container{
     width: 100%;
