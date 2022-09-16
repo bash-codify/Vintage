@@ -1305,7 +1305,7 @@ p {
     box-shadow: 0 0 2rem var(--greyColor);
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 414px) {
   .flash-container {
     width: 100%;
     min-height: 50vh;
@@ -1388,6 +1388,9 @@ p {
     place-items: center;
     z-index: -1;
     box-shadow: 0 0 2rem var(--greyColor);
+  }
+  .flash-container .flash-wrapper .flash-content .flash-image img {
+    height: 41.5rem;
   }
 }
 @media screen and (min-width: 500px) {
