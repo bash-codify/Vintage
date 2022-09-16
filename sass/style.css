@@ -1483,7 +1483,7 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    background: var(--backgroundColor);
+    background: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1659,7 +1659,7 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    background: red;
+    background: var(--backgroundColor);
     display: flex;
     align-items: center;
     justify-content: center;
