@@ -2,12 +2,6 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--backgroundColor);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  z-index: 10;
-  overflow-x: hidden;
 }
 
 #body.fixed-body {
@@ -27,6 +21,7 @@ body {
   width: 100%;
   min-height: 80vh;
   overflow: hidden;
+  margin-top: 7rem;
 }
 
 .hero-section {
@@ -1133,7 +1128,7 @@ p {
 .flash-container {
   width: 100%;
   min-height: 67vh;
-  margin-top: 12rem;
+  overflow: hidden;
 }
 .flash-container .flash-wrapper {
   max-width: 100%;
@@ -1147,6 +1142,7 @@ p {
   border-radius: 0.7rem;
   z-index: 100;
   box-shadow: 0 0.5rem 1rem var(--greyColor);
+  margin-top: 12.5rem;
 }
 .flash-container .flash-wrapper .flash-content .flash-text {
   display: flex;
@@ -1213,6 +1209,7 @@ p {
   place-items: center;
   z-index: -1;
   box-shadow: 0 0 2rem var(--greyColor);
+  z-index: 1000;
 }
 
 @media screen and (min-width: 320px) {
@@ -3304,22 +3301,6 @@ p {
 }
 .footer-container .reserved a {
   color: var(--primaryColor);
-}
-.footer-container .reserved .scroll-up {
-  background: var(--primaryColor);
-  padding: 0.5rem 0.8rem;
-  display: inline-block;
-  color: var(--textColor);
-  border-radius: 0.5rem;
-  transform: translateX(8rem);
-  visibility: hidden;
-  z-index: 1;
-}
-.footer-container .reserved .fixed-nav {
-  visibility: visible;
-  position: fixed;
-  bottom: 3rem;
-  left: 33rem;
 }
 
 @media screen and (min-width: 768px) {
