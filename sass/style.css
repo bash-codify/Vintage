@@ -33,19 +33,19 @@ body {
 .flyer-container {
   width: 100%;
   min-height: 42.5vh;
-  margin-top: 7rem;
+  margin-top: 10rem;
 }
 
 .advert-container {
   width: 100%;
   min-height: 40vh;
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 .flyer2-container {
   width: 100%;
-  min-height: 30vh;
-  margin-top: 7rem;
+  min-height: 25vh;
+  margin-top: 9rem;
 }
 
 .footer-container {
@@ -338,8 +338,8 @@ html {
     transition: none;
   }
   .nav-link li {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 400;
     display: inline-block;
     margin-left: 2rem;
   }
@@ -429,8 +429,8 @@ html {
     transition: none;
   }
   .nav-link li {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 400;
     display: inline-block;
     margin-left: 2rem;
   }
@@ -521,7 +521,7 @@ html {
   }
   .nav-link li {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     display: inline-block;
     margin-left: 2rem;
   }
@@ -615,7 +615,7 @@ html {
     transition: none;
   }
   .nav-link li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     display: inline-block;
     margin-left: 2.5rem;
@@ -1151,7 +1151,7 @@ p {
   flex-direction: column;
   gap: 3rem;
   height: 100%;
-  padding-left: 5vw;
+  padding-left: 5rem;
   letter-spacing: 0.2rem;
   z-index: 100;
 }
@@ -1448,7 +1448,7 @@ p {
     flex-direction: column;
     gap: 3rem;
     height: 90%;
-    padding-left: 5vw;
+    padding-left: 5rem;
     letter-spacing: 0.2rem;
     z-index: 100;
   }
@@ -1536,7 +1536,7 @@ p {
     flex-direction: column;
     gap: 3rem;
     height: 90%;
-    padding-left: 5vw;
+    padding-left: 5rem;
     letter-spacing: 0.2rem;
     z-index: 100;
   }
@@ -1624,7 +1624,7 @@ p {
     flex-direction: column;
     gap: 3rem;
     height: 90%;
-    padding-left: 5vw;
+    padding-left: 5rem;
     letter-spacing: 0.2rem;
     z-index: 100;
   }
@@ -1704,6 +1704,7 @@ p {
     border-radius: 2rem;
     z-index: 100;
     box-shadow: 0 0.5rem 1rem var(--greyColor);
+    margin-top: 15rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text {
     display: flex;
@@ -1711,23 +1712,23 @@ p {
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
-    height: 90%;
-    padding-left: 5vw;
+    height: 100%;
+    padding-left: 5rem;
     letter-spacing: 0.2rem;
     z-index: 100;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-900);
+    font-size: var(--fs-800);
     color: var(--flashColor);
     font-weight: 700;
     padding-bottom: 1rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
     padding-bottom: 1rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     padding-bottom: 1rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content span {
@@ -1738,7 +1739,7 @@ p {
   .flash-container .flash-wrapper .flash-content .dead-line {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
   }
   .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
     width: -webkit-fit-content;
@@ -1748,12 +1749,378 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
   }
   .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
     text-align: center;
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
+    font-size: var(--fs-300);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-image {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -59.5%);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 600px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    width: 90%;
+    height: 49vh;
+    background: var(--primary-variant);
+    position: relative;
+    border-radius: 2rem;
+    z-index: 100;
+    box-shadow: 0 0.5rem 1rem var(--greyColor);
+    margin-top: 15rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    padding-left: 5rem;
+    letter-spacing: 0.2rem;
+    z-index: 100;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
+    font-size: var(--fs-800);
+    color: var(--flashColor);
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
+    font-size: var(--fs-400);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content p {
+    font-size: var(--fs-300);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content span {
+    text-decoration: line-through;
+    color: var(--flashColor);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
+    text-align: center;
+    font-size: var(--fs-400);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
+    font-size: var(--fs-300);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-image {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -59.5%);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 600px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    width: 90%;
+    height: 49vh;
+    background: var(--primary-variant);
+    position: relative;
+    border-radius: 2rem;
+    z-index: 100;
+    box-shadow: 0 0.5rem 1rem var(--greyColor);
+    margin-top: 15rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    padding-left: 5rem;
+    letter-spacing: 0.2rem;
+    z-index: 100;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
+    font-size: var(--fs-800);
+    color: var(--flashColor);
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
+    font-size: var(--fs-400);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content p {
+    font-size: var(--fs-300);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content span {
+    text-decoration: line-through;
+    color: var(--flashColor);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
+    text-align: center;
+    font-size: var(--fs-400);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
+    font-size: var(--fs-300);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-image {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(57%, -59.5%);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    width: 95%;
+    height: 49vh;
+    background: var(--primary-variant);
+    position: relative;
+    border-radius: 2rem;
+    z-index: 100;
+    box-shadow: 0 0.5rem 1rem var(--greyColor);
+    margin-top: 15rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3rem;
+    height: 100%;
+    padding-left: 5rem;
+    letter-spacing: 0.2rem;
+    z-index: 100;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    margin-top: 4rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
+    font-size: var(--fs-800);
+    color: var(--flashColor);
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
+    font-size: var(--fs-400);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content p {
+    font-size: var(--fs-300);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content span {
+    text-decoration: line-through;
+    color: var(--flashColor);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transform: translateY(6rem);
+    padding-right: 5rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
+    text-align: center;
+    font-size: var(--fs-400);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
+    font-size: var(--fs-300);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-image {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -59.5%);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    width: 95%;
+    height: 48vh;
+    background: var(--primary-variant);
+    position: relative;
+    border-radius: 2rem;
+    z-index: 100;
+    box-shadow: 0 0.5rem 1rem var(--greyColor);
+    margin-top: 15rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3rem;
+    height: 100%;
+    padding-left: 5rem;
+    letter-spacing: 0.2rem;
+    z-index: 100;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    margin-top: 8rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
+    font-size: var(--fs-800);
+    color: var(--flashColor);
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
+    font-size: var(--fs-400);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content p {
+    font-size: var(--fs-300);
+    padding-bottom: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content span {
+    text-decoration: line-through;
+    color: var(--flashColor);
+    font-weight: 600;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transform: translateY(4rem);
+    padding-right: 5rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
+    text-align: center;
+    font-size: var(--fs-400);
   }
   .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
     font-size: var(--fs-300);
@@ -2555,45 +2922,11 @@ p {
   }
 }
 @media screen and (min-width: 912px) {
-  .flyer2-container {
-    background: url("../assets/img/banner/b14.png") center/cover no-repeat;
-  }
-  .flyer2-container .flyer2-wrapper {
-    width: 85%;
-    margin: 0 auto;
-  }
   .flyer2-container .flyer2-wrapper .flyer2-text {
     display: flex;
     align-items: center;
+    width: 85%;
     justify-content: space-between;
-    gap: 35rem;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col1 h2 {
-    color: var(--secondaryColor);
-    padding-bottom: 1rem;
-    font-size: var(--fs-600);
-    font-weight: 600;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col1 p {
-    font-size: var(--fs-400);
-    font-weight: 400;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col1 p span {
-    color: var(--flashColor);
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col2 .form-wrapper #email {
-    padding: 0.7rem 2rem;
-    border: none;
-    border-bottom-left-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    background: var(--backgroundColor);
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col2 .form-wrapper .btn2 {
-    border-bottom-right-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col2 .form-wrapper .btn2 a {
-    color: var(--textColor);
   }
   .img-container {
     width: 100%;
@@ -2697,45 +3030,11 @@ p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .flyer2-container {
-    background: url("../assets/img/banner/b14.png") center/cover no-repeat;
-  }
-  .flyer2-container .flyer2-wrapper {
-    width: 85%;
-    margin: 0 auto;
-  }
   .flyer2-container .flyer2-wrapper .flyer2-text {
     display: flex;
     align-items: center;
+    width: 85%;
     justify-content: space-between;
-    gap: 35rem;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col1 h2 {
-    color: var(--secondaryColor);
-    padding-bottom: 1rem;
-    font-size: var(--fs-600);
-    font-weight: 600;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col1 p {
-    font-size: var(--fs-400);
-    font-weight: 400;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col1 p span {
-    color: var(--flashColor);
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col2 .form-wrapper #email {
-    padding: 0.7rem 2rem;
-    border: none;
-    border-bottom-left-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    background: var(--backgroundColor);
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col2 .form-wrapper .btn2 {
-    border-bottom-right-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-  .flyer2-container .flyer2-wrapper .flyer2-text .text-col2 .form-wrapper .btn2 a {
-    color: var(--textColor);
   }
   .img-container {
     width: 100%;

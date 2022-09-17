@@ -511,103 +511,23 @@
 
 @media screen and (min-width:912px){
 
-
     .flyer2-container{
-     background: url('../assets/img/banner/b14.png') center/cover no-repeat;
 
-    .flyer2-wrapper {
-        width: 85%;
-        margin: 0 auto;
-           
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-            
-    
-    
-    
-            & .flyer2-text {
-                // display: grid;
-                // grid-template-columns: repeat(2, 1fr);
-                // place-items:center;
-                // column-gap:10rem;
+
+        .flyer2-wrapper{
+
+
+            .flyer2-text{
+
                 display: flex;
                 align-items: center;
+                width: 85%;
                 justify-content: space-between;
-                gap:35rem;
-    
                 
-    
-                & .text-col1{
-
-                    & h2 {
-                    
-                            color: var(--secondaryColor);
-                            padding-bottom: 1rem;
-                            font-size: var(--fs-600);
-                            font-weight: 600;
-                          
-                    
-                        }
-                    
-                        & p {
-                    
-                            font-size: var(--fs-400);
-                            font-weight: 400;
-                            
-                            
-                    
-                            & span {
-                                color: var(--flashColor)
-                            }
-                    
-                        }
-                }
-
-
-                & .text-col2{
-
-
-                    .form-wrapper {
-                    
-                    
-                            & #email {
-                                padding: 0.7rem 2rem;
-                                border: none;
-                                border-bottom-left-radius: 0.5rem;
-                                border-top-left-radius: 0.5rem;
-                                background: var(--backgroundColor);
-                            }
-                    
-                    
-                            & .btn2 {
-                    
-                                border-bottom-right-radius: 0.5rem;
-                                border-top-right-radius: 0.5rem;
-                    
-                    
-                                & a {
-                                    color: var(--textColor);
-                                }
-                            }
-                        }
-
-
-                }
-    
-    
-                
-    
-    
-                
-    
-    
-    
-    
             }
-        }
 
-   }
+        }
+    }
 
 
          // shop image section
@@ -755,103 +675,23 @@
 }       
 @media screen and (min-width:1024px){
 
-
     .flyer2-container{
-     background: url('../assets/img/banner/b14.png') center/cover no-repeat;
 
-    .flyer2-wrapper {
-        width: 85%;
-        margin: 0 auto;
-           
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-            
-    
-    
-    
-            & .flyer2-text {
-                // display: grid;
-                // grid-template-columns: repeat(2, 1fr);
-                // place-items:center;
-                // column-gap:10rem;
+
+        .flyer2-wrapper{
+
+
+            .flyer2-text{
+
                 display: flex;
                 align-items: center;
+                width: 85%;
                 justify-content: space-between;
-                gap:35rem;
-    
                 
-    
-                & .text-col1{
-
-                    & h2 {
-                    
-                            color: var(--secondaryColor);
-                            padding-bottom: 1rem;
-                            font-size: var(--fs-600);
-                            font-weight: 600;
-                          
-                    
-                        }
-                    
-                        & p {
-                    
-                            font-size: var(--fs-400);
-                            font-weight: 400;
-                            
-                            
-                    
-                            & span {
-                                color: var(--flashColor)
-                            }
-                    
-                        }
-                }
-
-
-                & .text-col2{
-
-
-                    .form-wrapper {
-                    
-                    
-                            & #email {
-                                padding: 0.7rem 2rem;
-                                border: none;
-                                border-bottom-left-radius: 0.5rem;
-                                border-top-left-radius: 0.5rem;
-                                background: var(--backgroundColor);
-                            }
-                    
-                    
-                            & .btn2 {
-                    
-                                border-bottom-right-radius: 0.5rem;
-                                border-top-right-radius: 0.5rem;
-                    
-                    
-                                & a {
-                                    color: var(--textColor);
-                                }
-                            }
-                        }
-
-
-                }
-    
-    
-                
-    
-    
-                
-    
-    
-    
-    
             }
-        }
 
-   }
+        }
+    }
 
 
          // shop image section
@@ -997,4 +837,6 @@
          }
 
 }       
+
+
 

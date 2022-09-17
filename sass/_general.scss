@@ -40,10 +40,11 @@ body{
     min-height: 90vh;
     overflow: hidden;
 }
+
 .flyer-container{
     width: 100%;
     min-height: 42.5vh;
-     margin-top: 7rem;
+     margin-top: 10rem;
    
     
 }
@@ -51,14 +52,14 @@ body{
 .advert-container{
     width: 100%;
     min-height: 40vh;
-     margin-top: 7rem;
+     margin-top: 8rem;
     
 }
 
 .flyer2-container {
     width: 100%;
-    min-height: 30vh;
-    margin-top: 7rem;
+    min-height: 25vh;
+    margin-top: 9rem;
 
 }
 .footer-container {
@@ -120,18 +121,6 @@ h1,h2,h3,h4,h5, p{
     // line-height: 1.2rem;
 
 }
-// section{
-//     margin-top: auto;
-
-//     & > h2{
-//         text-align: center;
-//     }
-//     & > p{
-//         text-align: center;
-//         width: 45%;
-//         margin: 0.6rem auto 2.5rem;
-//     }
-// }
 
 .btn{
 display: inline-block;
