@@ -1632,6 +1632,42 @@
     }
 }
 
+@media screen and (min-width:1280px){
+    
+    .flash-container{
+
+        width:100%;
+        min-height: 70vh;
+ 
+    
+        .flash-wrapper{
+    
+            max-width: 85%;
+            margin: auto;
+    
+    
+            .flash-content{
+    
+                .flash-text{
+    
+                    .content{
+                        transform: translate(32%, 30%);
+                
+                    }
+    
+                }
+                .dead-line{
+
+                    transform: translate(-60%, 30%);
+
+                }
+    
+            }
+    
+        }
+    }
+}
+
 @media screen and (min-width:1290px){
     
     .flash-container{

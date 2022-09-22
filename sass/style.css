@@ -1562,6 +1562,22 @@ p {
     transform: translate(-55%, 30%);
   }
 }
+@media screen and (min-width: 1280px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(32%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-60%, 30%);
+  }
+}
 @media screen and (min-width: 1290px) {
   .flash-container {
     width: 100%;
