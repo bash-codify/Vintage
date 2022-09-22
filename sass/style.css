@@ -1127,22 +1127,18 @@ p {
 }
 .flash-container {
   width: 100%;
-  min-height: 67vh;
+  min-height: 65vh;
   overflow: hidden;
 }
 .flash-container .flash-wrapper {
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
 }
 .flash-container .flash-wrapper .flash-content {
-  width: 100%;
-  height: 51vh;
-  background: var(--primary-variant);
+  margin-top: 10rem;
+  display: grid;
+  place-items: center;
   position: relative;
-  border-radius: 0.7rem;
-  z-index: 100;
-  box-shadow: 0 0.5rem 1rem var(--greyColor);
-  margin-top: 12.5rem;
 }
 .flash-container .flash-wrapper .flash-content .flash-text {
   display: flex;
@@ -1151,18 +1147,22 @@ p {
   flex-direction: column;
   gap: 3rem;
   height: 100%;
-  padding-left: 5rem;
+  padding-left: 3rem;
   letter-spacing: 0.2rem;
-  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -45%);
+  z-index: 1000;
 }
 .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-  font-size: var(--fs-700);
+  font-size: var(--fs-500);
   color: var(--flashColor);
   font-weight: 700;
   padding-bottom: 1rem;
 }
 .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   padding-bottom: 1rem;
 }
 .flash-container .flash-wrapper .flash-content .flash-text .content p {
@@ -1177,7 +1177,7 @@ p {
 .flash-container .flash-wrapper .flash-content .dead-line {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
   width: -webkit-fit-content;
@@ -1187,7 +1187,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 1rem;
 }
 .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
@@ -1199,17 +1199,7 @@ p {
   font-weight: 600;
 }
 .flash-container .flash-wrapper .flash-content .flash-image {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(48%, -54.3%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
-  z-index: -1;
-  box-shadow: 0 0 2rem var(--greyColor);
-  z-index: 1000;
+  position: relative;
 }
 
 @media screen and (min-width: 320px) {
@@ -1217,474 +1207,12 @@ p {
     width: 95%;
     min-height: auto;
   }
-  .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 32rem;
-  }
-}
-@media screen and (min-width: 360px) {
-  .flash-container {
-    width: 100%;
-    min-height: 70vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 95%;
-    margin: auto;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 42vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 0.7rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-700);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-300);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(48%, -54.4%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
-    box-shadow: 0 0 2rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 35rem;
-  }
-}
-@media screen and (min-width: 375px) {
-  .flash-container {
-    width: 100%;
-    min-height: 70vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 95%;
-    margin: auto;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 47vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 0.7rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-700);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-300);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(48%, -54.5%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
-    box-shadow: 0 0 2rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 35rem;
-  }
-}
-@media screen and (min-width: 390px) {
-  .flash-container {
-    width: 100%;
-    min-height: 70vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 95%;
-    margin: auto;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 37vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 0.7rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-400);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(48%, -54.5%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
-    box-shadow: 0 0 2rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 35rem;
-  }
-}
-@media screen and (min-width: 393px) {
-  .flash-container {
-    width: 100%;
-    min-height: 70vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 95%;
-    margin: auto;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 36.9vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 0.7rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-  }
-}
-@media screen and (min-width: 412px) {
-  .flash-container {
-    width: 100%;
-    min-height: 50vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 95%;
-    margin: auto;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 40vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 0.7rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-  }
   .flash-container .flash-wrapper .flash-content .flash-text {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-    height: 90%;
-    padding-left: 5rem;
-    letter-spacing: 0.2rem;
-    z-index: 100;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: var(--backgroundColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.8rem;
-    border-radius: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-500);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(48%, -55.1%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
-    box-shadow: 0 0 2rem var(--greyColor);
+    padding-left: 2rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 41.5rem;
-  }
-}
-@media screen and (min-width: 414px) {
-  .flash-container {
     width: 100%;
-    min-height: 50vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 95%;
-    margin: auto;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 41.1vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 0.7rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-    height: 90%;
-    padding-left: 5rem;
-    letter-spacing: 0.2rem;
-    z-index: 100;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: var(--backgroundColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.8rem;
-    border-radius: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-500);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(48%, -55.1%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
-    box-shadow: 0 0 2rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 41.5rem;
-  }
-}
-@media screen and (min-width: 428px) {
-  .flash-container {
-    width: 100%;
-    min-height: 50vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 95%;
-    margin: auto;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 42vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 0.7rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-    height: 90%;
-    padding-left: 5rem;
-    letter-spacing: 0.2rem;
-    z-index: 100;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: var(--backgroundColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.8rem;
-    border-radius: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-500);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(48%, -54.1%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
-    box-shadow: 0 0 2rem var(--greyColor);
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image img {
-    height: 40rem;
+    height: 25rem;
   }
 }
 @media screen and (min-width: 500px) {
@@ -1697,14 +1225,7 @@ p {
     margin: auto;
   }
   .flash-container .flash-wrapper .flash-content {
-    width: 100%;
-    height: 49vh;
-    background: var(--primary-variant);
     position: relative;
-    border-radius: 2rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-    margin-top: 15rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text {
     display: flex;
@@ -1712,19 +1233,27 @@ p {
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
+    width: 100%;
     height: 100%;
     padding-left: 5rem;
     letter-spacing: 0.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 100;
   }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(-1%, 30%);
+  }
   .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
+    font-size: var(--fs-700);
     color: var(--flashColor);
     font-weight: 700;
     padding-bottom: 1rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     padding-bottom: 1rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content p {
@@ -1740,6 +1269,7 @@ p {
     display: flex;
     align-items: center;
     gap: 2rem;
+    transform: translate(25%, 70%);
   }
   .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
     width: -webkit-fit-content;
@@ -1749,210 +1279,45 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 1rem;
   }
   .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
     text-align: center;
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
   }
   .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
     font-size: var(--fs-300);
     font-weight: 600;
   }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -59.5%);
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
+  .flash-container .flash-wrapper .flash-content .flash-image img {
+    width: 100%;
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 550px) {
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(31%, 70%);
   }
 }
 @media screen and (min-width: 600px) {
-  .flash-container {
-    width: 100%;
-    min-height: 70vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 90%;
-    margin: auto;
-    display: grid;
-    place-items: center;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 90%;
-    height: 49vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 2rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-    margin-top: 15rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-    height: 100%;
-    padding-left: 5rem;
-    letter-spacing: 0.2rem;
-    z-index: 100;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
   .flash-container .flash-wrapper .flash-content .dead-line {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: var(--backgroundColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    border-radius: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-400);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -59.5%);
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
+    transform: translate(37%, 70%);
   }
 }
-@media screen and (min-width: 600px) {
-  .flash-container {
-    width: 100%;
-    min-height: 70vh;
-  }
-  .flash-container .flash-wrapper {
-    max-width: 90%;
-    margin: auto;
-    display: grid;
-    place-items: center;
-  }
-  .flash-container .flash-wrapper .flash-content {
-    width: 90%;
-    height: 49vh;
-    background: var(--primary-variant);
-    position: relative;
-    border-radius: 2rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-    margin-top: 15rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3rem;
-    height: 100%;
-    padding-left: 5rem;
-    letter-spacing: 0.2rem;
-    z-index: 100;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
-  }
+@media screen and (min-width: 650px) {
   .flash-container .flash-wrapper .flash-content .dead-line {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+    transform: translate(42%, 70%);
   }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: var(--backgroundColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    border-radius: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(47%, 70%);
   }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-400);
-  }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(57%, -59.5%);
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
+}
+@media screen and (min-width: 750px) {
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(50%, 70%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1961,18 +1326,11 @@ p {
     min-height: 70vh;
   }
   .flash-container .flash-wrapper {
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
   }
   .flash-container .flash-wrapper .flash-content {
-    width: 95%;
-    height: 49vh;
-    background: var(--primary-variant);
     position: relative;
-    border-radius: 2rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-    margin-top: 15rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text {
     display: flex;
@@ -1980,13 +1338,15 @@ p {
     justify-content: space-between;
     flex-direction: row;
     gap: 3rem;
+    width: 100%;
     height: 100%;
     padding-left: 5rem;
     letter-spacing: 0.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 100;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content {
-    margin-top: 4rem;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
     font-size: var(--fs-800);
@@ -2011,8 +1371,7 @@ p {
     display: flex;
     align-items: center;
     gap: 2rem;
-    transform: translateY(6rem);
-    padding-right: 5rem;
+    transform: translate(-18%, 30%);
   }
   .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
     width: -webkit-fit-content;
@@ -2033,112 +1392,238 @@ p {
     font-size: var(--fs-300);
     font-weight: 600;
   }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -59.5%);
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
+  .flash-container .flash-wrapper .flash-content .flash-image img {
+    width: 100%;
+    height: 35rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1050px) {
   .flash-container {
     width: 100%;
     min-height: 70vh;
   }
   .flash-container .flash-wrapper {
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
   }
   .flash-container .flash-wrapper .flash-content {
-    width: 95%;
-    height: 48vh;
-    background: var(--primary-variant);
     position: relative;
-    border-radius: 2rem;
-    z-index: 100;
-    box-shadow: 0 0.5rem 1rem var(--greyColor);
-    margin-top: 15rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text {
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 3rem;
-    height: 100%;
-    padding-left: 5rem;
-    letter-spacing: 0.2rem;
-    z-index: 100;
   }
   .flash-container .flash-wrapper .flash-content .flash-text .content {
-    margin-top: 8rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h1 {
-    font-size: var(--fs-800);
-    color: var(--flashColor);
-    font-weight: 700;
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content h2 {
-    font-size: var(--fs-400);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content p {
-    font-size: var(--fs-300);
-    padding-bottom: 1rem;
-  }
-  .flash-container .flash-wrapper .flash-content .flash-text .content span {
-    text-decoration: line-through;
-    color: var(--flashColor);
-    font-weight: 600;
+    transform: translate(5%, 30%);
   }
   .flash-container .flash-wrapper .flash-content .dead-line {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    transform: translateY(4rem);
-    padding-right: 5rem;
+    transform: translate(-25%, 30%);
   }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: var(--backgroundColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    border-radius: 1rem;
+}
+@media screen and (min-width: 1080px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
   }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format h2 {
-    text-align: center;
-    font-size: var(--fs-400);
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
   }
-  .flash-container .flash-wrapper .flash-content .dead-line .deadline-format span {
-    font-size: var(--fs-300);
-    font-weight: 600;
+  .flash-container .flash-wrapper .flash-content {
+    position: relative;
   }
-  .flash-container .flash-wrapper .flash-content .flash-image {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -59.5%);
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    z-index: -1;
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(7%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-28%, 30%);
+  }
+}
+@media screen and (min-width: 1080px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    position: relative;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(7%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-28%, 30%);
+  }
+}
+@media screen and (min-width: 1110px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    position: relative;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(12%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-35%, 30%);
+  }
+}
+@media screen and (min-width: 1150px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    position: relative;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(18%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-40%, 30%);
+  }
+}
+@media screen and (min-width: 1150px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    position: relative;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(18%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-40%, 30%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content {
+    position: relative;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(20%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-43%, 30%);
+  }
+}
+@media screen and (min-width: 1230px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(25%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-50%, 30%);
+  }
+}
+@media screen and (min-width: 1260px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(28%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-55%, 30%);
+  }
+}
+@media screen and (min-width: 1290px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(31%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-58%, 30%);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(33%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-62%, 30%);
+  }
+}
+@media screen and (min-width: 1310px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(36%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-67%, 30%);
+  }
+}
+@media screen and (min-width: 1340px) {
+  .flash-container {
+    width: 100%;
+    min-height: 70vh;
+  }
+  .flash-container .flash-wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+  .flash-container .flash-wrapper .flash-content .flash-text .content {
+    transform: translate(42%, 30%);
+  }
+  .flash-container .flash-wrapper .flash-content .dead-line {
+    transform: translate(-70%, 30%);
   }
 }
 .product-wrapper {
